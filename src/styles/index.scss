@@ -1,0 +1,27 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import url('/src/styles/header.scss');
+@import url('/src/styles/main.scss');
+@import url('/src/styles/footer.scss');
+@import url('/src/styles/test.scss');
+
+body {
+  background-color: #223138;
+  min-width: 320px;
+  overflow: hidden;
+  max-width: 1920px;
+}
+
+@media (min-width: 700px) {
+  body {
+    background-color: red;
+  }
+  .header {
+    &__btn-menu {
+      display: none;
+    }
+    &__menu {
+      display: block;
+    }
+  }
+
+}
