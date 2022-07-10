@@ -1,6 +1,8 @@
 .test {
-  padding: 25px 20px;
+  padding: 10px 20px;
   &__container {
+    display: flex;
+    flex-direction: column;
   }
   &__title {
     color: fuchsia;
@@ -49,5 +51,23 @@
     height: 30px;
     margin-right: 10px;
     margin-top: 10px;
+    &.false {
+      border-color: red;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #fff;
+      color: blue;
+    }
+  }
+  &__go-to-results {
+    color: deeppink;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: cyan;
+    border: none;
+    margin-top: 25px;
   }
 }
